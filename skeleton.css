@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  color: #000;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white; /* or whatever your bg is */
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero {
+  background-color: #f9a9cc;
+  padding: 50px;
+  border-radius: 30px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: 38px;
+  color: #231f20;
+}
+
+.makeup-details {
+  background-color: #111;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.makeup-details h2 {
+  font-family: 'Impact', sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center; /* ✅ Tambah ni */
+}
+
+
+.makeup-details p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.skeleton-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.skeleton-gallery img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.makeup-details h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: pink;
+  font-family: 'Georgia', serif;
+}
+
+.product-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+    
+    width: max-content;
+    }
+
+.product-list img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-left: 80px; /* tolak ke kiri */
+  transform: translateX(-10px);
+}
+
+
+.product-list img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 25px;
+  border: none;
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hotpink;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.skeleton-detail-layout {
+  display: flex;
+  gap: 50px;
+ justify-content: flex-start;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.skeleton-gallery-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 40px; /* Tambah ni */
+}
+
+
+.skeleton-gallery-vertical img {
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.skeleton-text-right {
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.skeleton-text-right h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: left;
+  margin-left: 200px;
+  width: max-content;
+  padding-left: 30px;
+}
+
+
+.skeleton-text-right p {
+    text-align: center;
+    margin-left: 200px;
+    width: max-content;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.skeleton-text-right h3 {
+  text-align: center;
+    margin-left: 350px;
+    width: max-content;
+    padding-left: 30px;
+    font-size: 25px;
+    color: white;
+}

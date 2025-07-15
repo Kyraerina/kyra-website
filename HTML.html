@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Makeup World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <ul>
+  <li><a href="#home">HOME PAGE</a></li>
+  <li><a href="#about">ABOUT ME</a></li>
+  <li><a href="#style">MAKE UP STYLE</a></li>
+  <li><a href="#contact">CONTACT ME</a></li>
+</ul>
+  </nav>
+  <!--HOME-->
+  <section id="home" class="hero">
+  <div class="hero-content">
+    <img src="img/makeup bowl.png" alt="Makeup Bowl" />
+
+    <div class="text-container">
+      <h1>DISCOVER MY <br>SIGNATURE MAKEUP <br>LOOKS</h1>
+    </div>
+  </div>
+</section>
+
+<!-- Move this BELOW the section -->
+<p class="glow-text">Glow is the essence of beauty</p>
+
+  <!--ABOUT ME-->
+  <section id="about" class="about-section">
+  <div class="about-container">
+    <img src="IMG/About me pic.jpeg" alt="Kyra Erina" class="about-img">
+
+    <div class="about-text">
+      <p>
+        Hi, my name is Kyra Erina. I'm someone who truly loves makeup and all things beauty.
+        Out of all my favorite products, lipstick is my ultimate go-to — it brings every look to life.
+        Makeup gives me that glam glow and the confidence to express myself boldly.
+      </p>
+    </div>
+
+    <!-- Kiss PNG -->
+    <img src="IMG/Lipstick stain.png" alt="Kiss" class="kiss-icon">
+
+    <!-- Lipstick Bow PNG -->
+    <img src="IMG/lip anime.png" alt="Lipstick Bow" class="lipstick-icon">
+  </div>
+</section>
+
+<!-- Makeup Style -->
+<section id="style" class="makeup-style-section">
+  <div class="makeup-gallery" id="gallery">
+    
+    <div class="card" onclick="showDetails('skeleton')">
+      <a href="skeleton.html" target="_blank">
+      <img src="IMG/Skeleton style makeup.jpeg" class="makeup-img" alt="Skeleton Makeup" /></a>
+      <p>Skeleton <br> Make up</p>
+    </div>
+
+    <div class="card" onclick="showDetails('raya')">
+      <a href="raya.html" target="_blank">
+      <img src="IMG/Raya style makeup.jpeg" class="makeup-img" alt="Raya Makeup" /></a>
+      <p>Raya <br> Make up</p>
+    </div>
+
+    <div class="card" onclick="showDetails('natural')">
+      <a href="natural.html" target="_blank">
+      <img src="IMG/Natural style makeup.jpeg" class="makeup-img" alt="Natural Makeup" /></a>
+      <p>Natural <br> Make up</p>
+    </div>
+
+    <div class="card" onclick="showDetails('pink')">
+      <a href="Pink.html" target="_blank">
+      <img src="IMG/Pink style makeup.jpeg" class="makeup-img" alt="Pink Makeup" /></a>
+      <p>Pink <br> Make up</p>
+    </div>
+
+    <div class="card" onclick="showDetails('brown')">
+      <a href="brown.html" target="_blank">
+      <img src="IMG/Brown style makeup.jpeg" class="makeup-img" alt="Brown Makeup" /></a>
+      <p>Brown <br> Make up</p>
+    </div>
+    </section>
+
+    <!-- Makeup Products Carousel -->
+  <section class="product-carousel">
+  <h2>MAKE UP PRODUCTS</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#9664;</button>
+    
+    <div class="carousel-track" id="carouselTrack">
+      <img src="IMG/Nars.png" alt="Product 1">
+      <img src="IMG/Fenty contour.png" alt="Product 2">
+      <img src="IMG/rhode.png" alt="Product 3">
+      <img src="IMG/Huda beauty.png" alt="Product 4">
+      <img src="IMG/Fenty beauty.png" alt="Product 5">
+      <img src="IMG/rare beauty.png" alt="Product 6">
+      <img src="IMG/cookie highlighter.png" alt="Product 7">
+      <img src="IMG/Skintific.png" alt="Product 8">
+      <img src="IMG/browneyeshadow.png" alt="Product 9">
+      <img src="IMG/Maybeline red lip stick.png" alt="Product 10">
+      <img src="IMG/Pinkeyeshadow.png" alt="Product 11">
+      <img src="IMG/purple eyeshadow.png" alt="Product 12">
+      <img src="IMG/benefit.png" alt="Product 13">
+      <img src="IMG/wardahcolourfit.png" alt="Product 14">
+      <img src="IMG/narsblusher.png" alt="Product 15">
+    </div>
+    
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">&#9654;</button>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section class="contact-section" id="contact">
+  <h2>CONTACT ME</h2>
+  <div class="contact-box">
+    
+    <!-- Instagram -->
+    <div class="contact-item">
+      <img src="IMG/ig.png" alt="Instagram Icon">
+      <a href="https://www.instagram.com/kyraerinaa" target="_blank">@kyraerina</a>
+    </div>
+    
+    <!-- Email -->
+    <div class="contact-item">
+      <img src="IMG/email.png" alt="Email Icon">
+      <a href="mailto:kyraerina@gmail.com">kyraerina@gmail.com</a>
+    </div>
+    
+    <!-- WhatsApp -->
+    <div class="contact-item">
+      <img src="IMG/whatsapp.png" alt="WhatsApp Icon">
+      <a href="https://wa.me/60124095569" target="_blank">0124095569</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html
+
+

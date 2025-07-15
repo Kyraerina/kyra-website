@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  color: #000;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white; /* or whatever your bg is */
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero {
+  background-color: #f9a9cc;
+  padding: 50px;
+  border-radius: 30px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: 38px;
+  color: #231f20;
+}
+
+.glow-text {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.hero-content img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  color: #231f20;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+/*About Me*/
+.about-section {
+  background-color: #f9a9cc;
+  padding: 60px 40px;
+  border-radius: 30px;
+  margin: 60px;
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+.about-img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 18px;
+  color: #231f20;
+  line-height: 1.8;
+}
+
+.kiss-icon{
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  width: 90px;
+  height: auto;
+}
+
+.lipstick-icon {
+  position: absolute;
+  bottom: -30px;
+  right: 40px;
+  width: 90px;
+  height: auto;
+}
+
+/* Makeup style section */
+.makeup-style-section {
+  background-color: #f9d0e6;
+  padding: 50px 30px;
+  border-radius: 20px;
+  margin: 40px;
+}
+
+.makeup-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.card {
+  text-align: center;
+  width: 180px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  cursor: pointer
+}
+
+.makeup-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.makeup-img:hover {
+  transform: scale(1.1);
+}
+.makeup-card img {
+  width: 150px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+.makeup-card img:hover {
+  transform: scale(1.1);
+}
+
+/* CONTAINER FOR THE DETAIL */
+.makeup-details {
+  display: none; /* Hidden by default */
+  background-color: #111; /* Dark spooky vibe */
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* HEADER STYLE */
+.makeup-details h2 {
+  font-family: 'Impact', sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* PARAGRAPH TEXT */
+.makeup-details p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* GALLERY OF MAKEUP LOOK PHOTOS */
+.skeleton-gallery {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skeleton-gallery img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* PRODUCT SECTION TITLE */
+.makeup-details h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: pink;
+  font-family: 'Georgia', serif;
+}
+
+/* PRODUCT IMAGES */
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product-list img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-list img:hover {
+  transform: scale(1.1);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-carousel {
+  background-color: #f7a9c2;
+  padding: 40px;
+  border-radius: 30px;
+  margin: 50px;
+  text-align: center;
+}
+
+.product-carousel h2 {
+  color: white;
+  font-size: 28px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* ni penting */
+}
+
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, Edge */
+}
+
+
+.carousel-track img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f7a9c2;
+  padding: 40px;
+  border-radius: 30px;
+  margin: 50px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: white;
+  font-size: 28px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* White contact box */
+.contact-box {
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Each contact row */
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #f4a4ba;
+  padding: 15px 20px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+
+/* Icons inside each row */
+.contact-item img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+
+/* Link/Text beside icon */
+.contact-item a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
